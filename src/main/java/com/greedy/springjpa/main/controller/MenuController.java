@@ -83,7 +83,7 @@ public class MenuController {
 		
 		menuService.statusModify(menu);
 		
-		return "redirect:/menu/" + menu.getMenuCode();
+		return "redirect:/menu/list";
 	}
 	
 	@GetMapping("/delete")
