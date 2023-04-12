@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>statusmodify</title>
+</head>
+<body>
+	<h3 align="center">메뉴 판매상태 변경하기</h3>
+	
+	<form action="/menu/statusmodify" method="post">
+		<label>수정할 메뉴 번호 : </label>
+		<input type="number" name="menuCode"><br>
+		<select name="orderableStatus">
+			<option value="Y">판매가능</option>
+			<option value="N">판매불가</option>
+		</select><br>
+		<input type="submit" value="전송">
+		
+	</form>
+</body>
+</html>
